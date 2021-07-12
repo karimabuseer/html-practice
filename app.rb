@@ -17,11 +17,12 @@ get '/random-cat' do
 end
 
 get '/named-cat' do
-  p params[:name]
   @name = params[:name]
+  p params[:name]
   erb(:index)
 end
 
 get '/welcome' do
+  'HI'
   'WELCOME'
 end
